@@ -12,7 +12,7 @@ public class Apple : MonoBehaviour
     void Update()
     {
         //Destroy the apples when they go off screen
-        if (transform.position.y > bottomY)
+        if (transform.position.y < bottomY)
         {
             Destroy(this.gameObject); //destroys the gameobject this script is attached too ie the Apple
         }
