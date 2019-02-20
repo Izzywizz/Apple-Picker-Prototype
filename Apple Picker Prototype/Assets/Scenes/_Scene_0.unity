@@ -112,6 +112,30 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!1 &88208941 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4137359009931749505, guid: 375a7408d281241f8849c15c1b50fbde,
+    type: 3}
+  m_PrefabInstance: {fileID: 4137359009852137132}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &88208944
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 88208941}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1628e208e06154f2a9c296b4027d2581, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  applePrefab: {fileID: 1022116471802340598, guid: 25ab4e4a808b24b988d22f75aee59571,
+    type: 3}
+  speed: 10
+  LeftAndRightEdge: 20
+  chanceToChangeDirections: 0.02
+  secondsBetweenAppleDrops: 1
 --- !u!1 &170076733
 GameObject:
   m_ObjectHideFlags: 0
@@ -232,8 +256,8 @@ Camera:
   near clip plane: 0.3
   far clip plane: 1000
   field of view: 60
-  orthographic: 0
-  orthographic size: 5
+  orthographic: 1
+  orthographic size: 16
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
@@ -257,7 +281,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 534669902}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 1, z: -10}
+  m_LocalPosition: {x: 0, y: 0, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -275,6 +299,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: AppleTree
       objectReference: {fileID: 0}
+    - target: {fileID: 4137359009931749505, guid: 375a7408d281241f8849c15c1b50fbde,
+        type: 3}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
     - target: {fileID: 4137359009931749506, guid: 375a7408d281241f8849c15c1b50fbde,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -283,7 +312,7 @@ PrefabInstance:
     - target: {fileID: 4137359009931749506, guid: 375a7408d281241f8849c15c1b50fbde,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 10
+      value: 12
       objectReference: {fileID: 0}
     - target: {fileID: 4137359009931749506, guid: 375a7408d281241f8849c15c1b50fbde,
         type: 3}
@@ -329,6 +358,21 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4137359009931749507, guid: 375a7408d281241f8849c15c1b50fbde,
+        type: 3}
+      propertyPath: m_IsKinematic
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4137359008848297718, guid: 375a7408d281241f8849c15c1b50fbde,
+        type: 3}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 4137359009915921640, guid: 375a7408d281241f8849c15c1b50fbde,
+        type: 3}
+      propertyPath: m_Layer
+      value: 9
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 375a7408d281241f8849c15c1b50fbde, type: 3}
