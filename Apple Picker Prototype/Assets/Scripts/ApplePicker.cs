@@ -45,6 +45,13 @@ public class ApplePicker : MonoBehaviour
         // remove the Basket from the list and destroy the GameObject
         basketList.Remove(tBasketGo);
         Destroy(tBasketGo);
+
+        //avoids index out of bounds error
+        //if there are no baskets left, restart the game
+        if (basketList.Count == 0)
+        {
+            SceneManager.LoadScene("_Scene_0");
+        }
     }
 
     // Update is called once per frame
