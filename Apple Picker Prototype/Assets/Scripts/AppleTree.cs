@@ -49,7 +49,6 @@ public class AppleTree : MonoBehaviour
         transform.position = pos;
 
         // Change Direction
-        print(speed);
         if (pos.x < -LeftAndRightEdge)
         {
             speed = Mathf.Abs(speed); //move right +ve if a small value
